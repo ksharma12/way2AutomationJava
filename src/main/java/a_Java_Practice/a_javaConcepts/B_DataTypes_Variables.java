@@ -1,29 +1,4 @@
 package a_Java_Practice.a_javaConcepts;
-
-    /*
-    Rules for Creation:
-      {class} should be start from capital letter and follow camel casing
-      Name should represent [Nouns]
-      eg: Way2Automation, Animal, Plant, ByIdOrName etc
-
-      {interfaces} should be start from capital letter and follow camel casing
-      Name should represent [Adjectives]
-      eg: Runnable, ActionListener, Serializable
-
-      {methods} should be start from small letter and follow camel casing
-      Name should represent [Verb-Noun]
-      eg: getResult, doCalculation, etc
-
-      {variables} should be start from small letter and follow camel casing
-      Name should represent [small-meaning-words]
-      eg: buttonWidth, accountBalance, myList
-
-      {constants} should be all upper case and _ used to connect them
-      Name should represent [EXIT_ON_CLOSE]
-      eg: EXIT_ON_CLOSE, MIN_HEIGHT, etc
-     */
-
-
 public class B_DataTypes_Variables {
 
     // Primitive Data Types

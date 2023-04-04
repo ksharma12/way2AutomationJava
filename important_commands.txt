@@ -1,1 +1,106 @@
+/*
+    Rules for Creation:
+      {class} should be start from capital letter and follow camel casing
+      Name should represent [Nouns]
+      eg: Way2Automation, Animal, Plant, ByIdOrName etc
+
+      {interfaces} should be start from capital letter and follow camel casing
+      Name should represent [Adjectives]
+      eg: Runnable, ActionListener, Serializable
+
+      {methods} should be start from small letter and follow camel casing
+      Name should represent [Verb-Noun]
+      eg: getResult, doCalculation, etc
+
+      {variables} should be start from small letter and follow camel casing
+      Name should represent [small-meaning-words]
+      eg: buttonWidth, accountBalance, myList
+
+      {constants} should be all upper case and _ used to connect them
+      Name should represent [EXIT_ON_CLOSE]
+      eg: EXIT_ON_CLOSE, MIN_HEIGHT, etc
+*/
+
 intendation :- ctrl + alt + I
+
+final keyword :-
+variable - becomes constant
+method - cannot be override
+class - cannot be inherited
+
+       throwable
+       |   |
+      |     |
+     |       |
+    |         |
+   |           |
+ Error        Exception
+                |    |
+               |      |
+              |        |
+             |          |
+          IOExceptions   |
+                         RuntimeExceptions
+
+Access Modifiers :-
+|---------------------------|
+|Public                     |
+||--------------------------|
+||Protected                 |
+||--------------------------|
+|||Default                  |
+|||-------------------------|
+||||Private                 |                        |
+|---------------------------|
+
+Class :-
+Public  - Can be accessed anywhere in java world
+Default - Can be accessed within its own package only
+Protected/Private - classes not exist
+
+Class Member(method/variable) :-
+Public    - Can be accessed anywhere in java world
+Default   - Can be accessed within its own package only
+Protected - Can be accessed within its own package and outside package via inheritance
+Private   - Can be accessed within its own class only
+
+|-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
+|Modifier   | Same class    | Outside Class Same Package | Outside Package | Same Package Using Inheritance | Outside Package Using Inheritance | Most Restricted | Most Visible |
+|-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
+|Public     | variable yes  |        variable yes        |   variable yes  |          variable yes          |           variable yes            |                 |              |
+|           | method   yes  |        method   yes        |   method   yes  |          method   yes          |           method   yes            |        4        |      1       |
+|           |               |                            |                 |                                |                                   |                 |              |
+|-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
+|Protected  | variable yes  |        variable yes        |   variable no   |          variable yes          |           variable yes            |                 |              |
+|           | method   yes  |        method   yes        |   method   no   |          method   yes          |           method   yes            |        3        |      2       |
+|           |               |                            |                 |                                |                                   |                 |              |
+|-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
+|Default    | variable yes  |        variable yes        |   variable no   |          variable yes          |           variable no             |                 |              |
+|           | method   yes  |        method   yes        |   method   no   |          method   yes          |           method   no             |        2        |      3       |
+|           |               |                            |                 |                                |                                   |                 |              |
+|-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
+|Private    | variable yes  |        variable no         |   variable no   |          variable no           |           variable no             |                 |              |
+|           | method   yes  |        method   no         |   method   no   |          method   no           |           method   no             |        1        |      4       |
+|           |               |                            |                 |                                |                                   |                 |              |
+|-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
+
+Inheritance :-
+class inherit another class     :- extends
+class inherit another interface :- implements
+
+Encapsulation :- design pattern [data binding / wrapping up data and methods in single unit]
+How to achieve it :-
+1. Always make instance variables private
+2. Always make public accessor methods and force calling them to access instance variables
+3. User Naming conventions setters() and getters() for these methods
+
+Drawbacks of not applying encapsulation:-
+
+
+Inheritance   :-
+Polymorphism  :- overloading, overriding
+abstract, interfaces
+Object classes
+Data hiding   :- hiding data from outside world so that it cannot be accessed directly
+abstraction   :- force calling data which is hidden using some methods
+getters and setters
