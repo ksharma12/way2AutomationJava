@@ -84,10 +84,15 @@ Private   - Can be accessed within its own class only
 |           |               |                            |                 |                                |                                   |                 |              |
 |-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
 
-Inheritance :-
-class inherit another class     :- extends
-class inherit another interface :- implements
+Inheritance   :- sub_Class is a Parent_Class [is a relationship]
+Polymorphism  :- overloading, overriding
+abstract, interfaces
+Object classes
+Data hiding   :- hiding data from outside world so that it cannot be accessed directly
+abstraction   :- force calling data which is hidden using some methods
+getters and setters
 
+------------------------------------------------------------------------ENCAPSULATION-------------------------------------------------------------------------------
 Encapsulation :- design pattern [data binding / wrapping up data and methods in single unit]
 How to achieve it :-
 1. Always make instance variables private
@@ -95,12 +100,74 @@ How to achieve it :-
 3. User Naming conventions setters() and getters() for these methods
 
 Drawbacks of not applying encapsulation:-
+exposed variables which leads to data leak
 
+------------------------------------------------------------------------INHERITANCE-------------------------------------------------------------------------------
+INHERITANCE :-
+class inherit another class         :- extends
+interface inherit another interface :- extends
+class inherit another interface     :- implements
+interface inherit a class           :- N/A
 
-Inheritance   :-
-Polymorphism  :- overloading, overriding
-abstract, interfaces
-Object classes
-Data hiding   :- hiding data from outside world so that it cannot be accessed directly
-abstraction   :- force calling data which is hidden using some methods
-getters and setters
+- Single
+- Multiple
+- MultiLevel
+- Hybrid
+- Hierarchical
+
+- Note : If there are same methods in all/some classes which are inherited in hierarchy then closest method would be accessed by the last child
+- an [object of subclass] can be assigned to [parent class instance]
+  A a = new C(); [polymorphic reference]
+         A
+       spark()
+       |   |
+      |     |
+     |       |
+    |         |
+   |           |
+   B              C
+                spark()
+                |    |
+               |      |
+              |        |
+             |          |
+             D          E
+                       spark() from C Called
+                       not from A
+
+Purpose of inheritance :-
+------------------------------------------------------------------------POLYMORPHISM-------------------------------------------------------------------------------
+POLYMORPHISM -
+(action/behaviour)
+same name multiple form :-
+1. Compile Time polymorphism / Early binding / static binding / overloading
+2. Run Time polymorphism / late binding / overriding
+
+OVERLOADING :-
+1. Compile Time polymorphism / Early binding / static binding / overloading :-
+ - Overloading implementation by making the signatures of methods different
+ - we cannot achieve method overloading by keeping method signature same but different return type
+ - main method can also be overloaded
+
+* varargs :- method which can accept variable length of arguments
+ - var args... must always be at the last of the formal parameter list
+ - these arguments come in the form of array
+
+ Ambiguity :- Errors which came at the time of compile [calling overloaded function]
+ Duplicacy :- Errors which occur at the time of defining the overloaded functions
+
+OVERRIDING :-
+different classes (with inheritance applied) we have methods with same signature
+- Overriding is done if the parent is unable to fulfill the requirements of child
+- same method of parent class in child class but overrides the same
+- can we do type change while overriding  - No  [if return types are primitive(byte, char, short, int, long, double, float, boolean)]
+- can we do type change while overriding  - Yes [If return types are class name / covariant]
+  covariant :- the return types are className and there is a parent-child relationship between those classes.
+- method type class should extend the parent class with same method with different return type
+
+Wrapper classes for primitive types :-
+int  -  Integer etc.
+
+Not Using OverRiding DrawBacks :-
+-
+
