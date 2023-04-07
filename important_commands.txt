@@ -207,7 +207,10 @@ Abstract Keyword with method :- These methods must be overridden in first concre
   abstract f1(),           mandatory to implement all abstract methods in parent class f1(),f2()...etc in first concrete class
   abstract f2(),
   f3()
--
+- we can only call a method from abstract class with the help of inheritance only
 
+--------------------------------------------------------------INTERFACE-------------------------------------------------------------------------------------------
+- We cannot create an instance of interface
+-
 
 
