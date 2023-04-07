@@ -169,5 +169,45 @@ Wrapper classes for primitive types :-
 int  -  Integer etc.
 
 Not Using OverRiding DrawBacks :-
+- Repetition of code if same method with different functionality is used.
 -
+  A(parent)-----> B(child)
+  f1(),f2()       f1()
+  static f3()     static f3()
+
+  A obj = new B();
+  obj.f1();
+  obj.f2();
+
+- Can we change the access modifier of when overriding
+  yes , but we cannot reduce the visibility, we can only increase the visibility
+  if A f1() method is public then B f1() method cannot be private/protected/default
+  if A f1() method is private then B f1() method can be private/protected/default/public
+
+- Can we Override static methods ?
+  No, This is called method hiding
+  A obj = new B();
+  obj.f3(); // will call the method from parent class A
+  B obj = new B();
+  obj.f3(); // will call the method from child class B
+
+--------------------------------------------------------------DATA ABSTRACTION AND ABSTRACT CLASS-----------------------------------------------------------------
+Abstract is design pattern in which only functionality is declared but not defined
+Abstract Keyword :- Can be used with classes and methods
+Abstract Keyword with class :- These classes can not be instantiated and these are called abstract classes
+Abstract Keyword with method :- These methods must be overridden in first concrete class
+                                concrete class :- whose instances can be created
+- Abstract A(parent)-----> B(child1)-----
+
+- If we forgot to override a parent class method in child class then incase
+  that method called the functionality of parent class method will be called instead of child
+--------------------------------------------------------------ABSTRACT CLASS--------------------------------------------------------------------------------------
+- Abstract class can have [concrete methods] as well as [abstract methods]
+- Abstract A(parent)-----> B(child)
+  abstract f1(),           mandatory to implement all abstract methods in parent class f1(),f2()...etc in first concrete class
+  abstract f2(),
+  f3()
+-
+
+
 

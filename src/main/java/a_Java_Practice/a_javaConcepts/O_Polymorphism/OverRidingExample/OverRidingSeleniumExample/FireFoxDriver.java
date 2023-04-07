@@ -2,11 +2,11 @@ package a_Java_Practice.a_javaConcepts.O_Polymorphism.OverRidingExample.OverRidi
 
 public class FireFoxDriver extends WebDriver {
 
-    public void clickOnFF(){
+    public void click(){
         System.out.println("clicking on firefox");
     }
 
-    public void sendKeysOnFF(){
+    public void sendKeys(){
         System.out.println("sendKeys on firefox");
     }
 
