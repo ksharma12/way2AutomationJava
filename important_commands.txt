@@ -64,6 +64,8 @@ Default   - Can be accessed within its own package only
 Protected - Can be accessed within its own package and outside package via inheritance
 Private   - Can be accessed within its own class only
 
+method/constructors
+
 |-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
 |Modifier   | Same class    | Outside Class Same Package | Outside Package | Same Package Using Inheritance | Outside Package Using Inheritance | Most Restricted | Most Visible |
 |-----------|---------------|----------------------------|-----------------|--------------------------------|-----------------------------------|-----------------|--------------|
@@ -211,6 +213,73 @@ Abstract Keyword with method :- These methods must be overridden in first concre
 
 --------------------------------------------------------------INTERFACE-------------------------------------------------------------------------------------------
 - We cannot create an instance of interface
--
+- We cannot create an abstract class and interface final
+- First concrete child should implement all the methods of interfaces extends themselves
+- multiple inheritance is possible with interfaces :- child class can implement more than 1 interfaces
+- In case a class is inheriting both class and interface then class would first extend "parent class" then implement interface/interfaces
+-------------------------------------------------------------------EXCEL-----------------------------------------------------------------------------------------
+- Creating excel file using POI
+- Create sheet in above excel file
+- Create row in above sheet
+- create cell in above row
+- Use output stream (directory in which our .xls file will get save)
+- Use output stream to (create a file and chain it to previous step)
+- Use 'workbook.writer' to write 'characters' in the file and chain it to the previous steps
+- Close the output stream
+-------------------------------------------------------------------CONSTRUCTORS---------------------------------------------------------------------------------
+- Have same name as of the className
+- They don't have return type , but we can optionally put return type to them
+- They can be private, default, public and protected
+- If a constructor is private we cannot create the object of that class in another class
+- Types of constructors :-
+ - Default Constructor
+   - when no constructor created explicitly then jvm create its own default constructor
+ - Parameterized Constructor
+   - Take Various Parameters at the time of object creation
+ - No-args Constructor
+   - User Defined Constructor
+- Constructor Overloading
+- Calling constructor with in the constructor using this();
+-------------------------------------------------------------------COLLECTION---------------------------------------------------------------------------------
+- Collection is an API/Frameworks  which contains number of [interfaces and classes] :-
+ - Collection (interface)
+ - List (interface)
+ - Queue (interface)
+ - Set (interface)
+ # Drawbacks of Arrays:
+   - The size is fixed
+   - Containing same type of Data
+ - No separate jar file needed for same
+ # Benefits:
+   - The size is not fixed
+   - It can contain multiple type of data
+|-------------------------------------------------------------------------------|
+|     MAPS        |  SETS          |  LISTS      | QUEUES         | UTILITIES   |
+|_______________________________________________________________________________|
+|   HashMap       |  HashSet       |  ArrayList  | PriorityQueues | Collections |
+|_______________________________________________________________________________|
+|   Hashtable     |  LinkedHashSet |  Vector     |                | Arrays      |
+|_______________________________________________________________________________|
+|   TreeMap       |  TreeSet       |  LinkedList |                |             |
+|_______________________________________________________________________________|
+|   LinkedHashMap |                |             |                |             |
+|_______________________________________________________________________________|
+ Utilities :-
+ - Sets, Lists and Queues are interfaces and they have various classes defined in table written up
+ - Utilities have 2 classes Collections and Arrays
+
+# Wrapping / Unwrapping and Autoboxing :-
+  - Wrapper Classes :- THey are those classes used to wrap around primitive data types
+    - Integer
+    - Character
+    - Boolean
+    - Long
+    - Float
+    - Double
+-------------------------------------------------------------------ARRAYLIST---------------------------------------------------------------------------------
+- Order of insertion is preserved in ArrayList, Vector and LinkedList from LISTS.
 
 
+------------------------------------------------Difference Between [==] and [equals()] operator--------------------------------------------------------------
+a == b      comparison operator >>>>>> [object reference] and [address] same
+a.equals(b) content is same or not
