@@ -281,5 +281,19 @@ Abstract Keyword with method :- These methods must be overridden in first concre
 
 
 ------------------------------------------------Difference Between [==] and [equals()] operator--------------------------------------------------------------
-a == b      comparison operator >>>>>> [object reference] and [address] same
-a.equals(b) content is same or not
+a == b comparison operator >>>>>> [object reference] and [address] same
+a.equals(b) >>>>>>>>>>>>>>>>>>>>> content is same or not
+------------------------------------------------------------------Singleton Design Pattern------------------------------------------------------------------
+- It has private constructor so that no one can create the object of this class outside this class
+
+------------------------------------------------------------------Java Streams------------------------------------------------------------------------------
+- Input Stream
+- Output Stream
+------------------------------------------------------------------Maven Dependency management Tool/Build Tool------------------------------------------------------------------------------
+- Configuring maven :-
+  - download the zip file with various things
+  - then configure the path in environment variable
+    - open edit environment variable
+    - create new env for MVN_HOME in lower "new"
+    - save the rest part
+- ctrl + shift + O  => (to load mvn dependencies)
