@@ -1,0 +1,2 @@
+INFO    2023-04-10 14:51:31,937 [main] a_Java_Practice.a_javaConcepts.ReadingWritingFiles.TestReadingWritingProperties  - This is the information log
+ERROR   2023-04-10 14:51:31,937 [main] a_Java_Practice.a_javaConcepts.ReadingWritingFiles.TestReadingWritingProperties  - Here the error logs will be printed

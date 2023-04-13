@@ -1,0 +1,14 @@
+# 3 types of comments :-
+- single line comment
+     // comment until end of line
+- multiline comment
+    /* Multiple
+    * line comment
+    */
+- JavaDoc Comment
+   /**
+   * Javadoc multiple-line comment
+   * @author Jeanne and Scott
+   *
+
+   
