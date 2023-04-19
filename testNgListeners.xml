@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNg Listeners" parallel="tests">
+    <test name="Login Test">
+        <classes>
+            <class name="testNg.testNgListeners.LoginTest"/>
+        </classes>
+    </test>
+</suite>
