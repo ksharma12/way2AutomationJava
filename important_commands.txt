@@ -297,3 +297,50 @@ a.equals(b) >>>>>>>>>>>>>>>>>>>>> content is same or not
     - create new env for MVN_HOME in lower "new"
     - save the rest part
 - ctrl + shift + O  => (to load mvn dependencies)
+- TestNg:-
+  - groups must remain same in case of dependsOnMethods
+-------------------------------------------------------git--------------------------------------------------------------------------------------------------------
+git commands :
+git init
+git add README.md
+git commit -m "first commit
+git branch -M main
+git remote add origin https://github.com/vedthemaster/tutorial-yt.git
+git push -u origin main
+
+git clone from specific branch :
+git clone --single-branch --branch <branchname> <remote-repo>
+
+git reset - for un_add all added files before commit
+git reset <file> - for un_add particular file
+
+git stash - save the current working image in a stash list with stash@{number}, number = 1,2,3,4,5...
+git stash apply stash@{number} to apply these changes on local working
+
+git conflicts :
+https://stackoverflow.com/questions/161813/how-do-i-resolve-merge-conflicts-in-a-git-repository
+
+after git conflict resolve :
+https://stackoverflow.com/questions/2474097/how-do-i-finish-the-merge-after-resolving-my-merge-conflicts
+
+name of git branch :
+https://stackoverflow.com/questions/6245570/how-do-i-get-the-current-branch-name-in-git
+
+how to fix github error permission denied :
+https://www.youtube.com/watch?v=dxvnbKaszBw&ab_channel=BiggiDroid
+
+mac ==> command + shift + g (to find .ssh key)
+
+Notepad++ regix :-
+105164 25   >>>>>> 105164_0025
+[ ]([0-9]+) to _$1   --do your first replace
+_([0-9])$ to _000$1
+_([0-9][0-9])$ to _00$1
+_([0-9][0-9][0-9])$ to _0$1
+------------------------------------------------------------------Reports------------------------------------------------------------------------------
+- TestNg
+  Normal html code can be displayed with no issues in html files
+- ReportNg
+  We need to add extra tag to generate html report with external html code induced
+--------------------------------------------------------------DataProvider-----------------------------------------------------------------------------
+- DataProvider always return 2 dimensional Object type array
